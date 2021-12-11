@@ -1,0 +1,122 @@
+/* variables */
+:root{
+    --brightorgange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --veryddarkdcyan: hsl(179, 100%, 13%);
+    --tranparentwhite: hsla(0, 0%, 100%, 0.75);
+    --lightgray: hsl(0, 0%, 95%);
+}
+
+/* reset */
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Lexend Deca;
+    font-size: 15px;
+}
+h1{
+    color: var(--lightgray);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+p{
+    color: var(--tranparentwhite);
+}
+ul{
+    list-style-type: none;
+    max-width: 375px;
+}
+
+/* bodystyles */
+button{
+    border: 2px solid var(--tranparentwhite);
+    background: var(--lightgray);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+p{
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 25px;
+}
+ul li:nth-child(1) button{
+    color: var(--brightorgange);
+}
+
+ul li:nth-child(2) button{
+    color: var(--darkcyan);
+}
+ul li:nth-child(3) button{
+    color: var(--veryddarkdcyan);
+}
+
+ul li button:hover{
+    background: none;
+    color: var(--tranparentwhite);
+    cursor:pointer;
+}
+ul li:nth-child(1){
+    background: var(--brightorgange);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+ul li:nth-child(2){
+    background: var(--darkcyan);
+}
+ul li:nth-child(3){
+    background: var(--veryddarkdcyan);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+div{
+    margin: 10% 13%;
+}
+li{
+    padding: 15%;
+    max-width: 280px;
+    min-height: 300px;
+}
+li *{
+    margin-left: 7%;
+    margin-right: 10%;
+
+}
+/* fonts */
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('https://fonts.google.com/specimen/Lexend+Deca');
+}
+
+/*desktop styles*/
+@media screen and (min-width:1000px){
+    
+    ul{
+        display: flex;
+        min-width: 900px;
+        border-top-left-radius: 7px;
+    }
+    li{
+        padding: 0 5%;
+        padding-top: 5%;
+        min-height: 370px;
+    }
+    ul li:nth-child(1){
+        background: var(--brightorgange);
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 0;
+    }
+    ul li:nth-child(3){
+        background: var(--veryddarkdcyan);
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+    div{
+        margin: 10% 17%;
+    }
+}
